@@ -46,25 +46,23 @@ makePizza("magarita" , "small");
 function makePizza(type , size) {
     console.log("One" , size , type , "pizza coming up!");
 }
-let pizzaPrice= 0;
-
-function pricePizza() {
+let pizzaPrice= pricePizza("small");
+console.log(pizzaPrice);
+function pricePizza(size) {
     if (size == "large") {
-        pizzaPrice= 17
+        return 17
     } else if (size == "small") {
-        pizzaPrice= 13
+        return 13
     }
 }
-
-let howMuchForAPizza = pricePizza
-console.log(howMuchForAPizza);
-
 let y=21
-console.log(x);
-console.log(y);
+checkLocal();
+// console.log(x);
+// console.log(y);
 function checkLocal() {
     let x=67
     console.log(x);
     console.log(y);
 }
-
+console.log(y);
+console.log(x);
